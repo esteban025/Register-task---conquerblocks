@@ -18,21 +18,30 @@ El propósito de este repositorio es:
 ## 📁 Estructura del Repositorio
 
 ```
-├── actividad-01/
-│   ├── README.md
-│   └── solucion/
-├── actividad-02/
-│   ├── README.md
-│   └── solucion/
-├── actividad-03/
-│   ├── README.md
-│   └── solucion/
-└── ...
+├── backend/
+│   ├── despliegue/
+│   ├── django/
+│   ├── sql/
+│   └── wordpress/
+├── backend-expert/
+│   ├── go/
+│   ├── java/
+│   ├── nodejs/
+│   └── rust/
+├── frontend/
+│   ├── css/
+│   ├── html/
+│   ├── js/
+│   ├── react/
+│   └── ts/
+├── frontend-expert/
+│   ├── angular/
+│   ├── astro/
+│   ├── react/
+│   ├── react-avanzado/
+│   └── vuejs/
+└── README.md
 ```
-
-Cada carpeta de actividad contiene:
-- **README.md**: Descripción de la actividad y objetivos
-- **solucion/**: Código fuente y archivos de la solución implementada
 
 ## 🛠️ Tecnologías y Herramientas
 
@@ -41,7 +50,6 @@ Las tecnologías utilizadas variarán según cada actividad, pero pueden incluir
 - Lenguajes de programación
 - Frameworks y librerías
 - Herramientas de desarrollo
-- Blockchain y Web3 (si aplica)
 
 ## 📊 Progreso
 
@@ -69,7 +77,7 @@ Este es un repositorio de aprendizaje personal. Las soluciones pueden no ser per
 
 ## 👨‍💻 Autor
 
-Estudiante de la Academia ConquerBloks
+Estudiante de la Academia ConquerBloks | EstebanDev
 
 ## 📄 Licencia
 
