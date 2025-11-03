@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios de la clase 6 | EstebanDev</title>
+  <meta name="description" content="En esta página se eforzaré el conocimiento sobre las etiquetas semanticas">
+</head>
+<body>
+  <!-- Ejemplo de pagina con etiquetas semanticas -->
+   <!--Basada en la página https://uicolors.app/generate/907be3  -->
+  <header>
+    <a href="/">LogoPage</a>
+    <nav>
+      <a href="/generate" >Generate</a>
+      <a href="/my-palettes">My Palettes</a>
+      <a href="#tailwindColors">Tailwind Colors</a>
+      <a href="#more">More</a>
+    </nav>
+    <aside>
+      <button>Feedback</button>
+      <button>DarkMode</button>
+      <button>SignIn</button>
+    </aside>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <h1>Tailwind CSS Color Generator</h1>
+        <p>Instantly create stunning color scales by entering a base color or hitting the spacebar.</p>
+      </header>
+      <article>
+        <form action="">
+          <h2>Primary</h2>
+          <select name="config" id="selector-config">
+            <option value="">Selecciona un tipo</option>
+            <option value="hexagecimal">HEX</option>
+            <option value="oklch">OKLCH</option>
+            <option value="hsl">HSL</option>
+            <option value="hsl">HSL</option>
+          </select>
+          <div class="inputs">
+            <input type="color" name="getColor" id="getColor">
+            <input type="text" id="text-color" placeholder="HexCode">
+          </div>
+          <footer>
+            <button>Generate Random</button>
+            <button>Add secondary color scale</button>
+            <a href="#">Color combination schema</a>
+          </footer>
+        </form>
+      </article>
+      <article>Comentarios Random</article>
+    </section>
+
+    <section>
+      <header>
+        <h2>Palette 1</h2>
+        <button>Save palette</button>
+      </header>
+
+      <section>
+        <!-- cantidad de articles necesarios para fragmentar la informacion -->
+         <article></article>
+         <footer>
+          <nav>
+            <a href="#">Api</a>
+            <a href="#">Tailwind Colors</a>
+            <a href="#">Feedback</a>
+            <a href="#">Privacy Policy</a>
+          </nav>
+         </footer>
+      </section>
+    </section>
+  </main>
+  
+</body>
+</html>
