@@ -190,6 +190,4 @@ body {
 - **Prioridad**: Inline > ID > Clase > Elemento
 - **Buenas prácticas**: Nombres descriptivos, organización
 
-# UNIDADES DE MEDIDA
-# TIPOS DE ETIQUETAS Y CSS NAVEGGADOR
-# CASCADA Y ESPECIFICIDAD
+---
