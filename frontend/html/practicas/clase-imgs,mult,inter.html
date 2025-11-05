@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos: Imágenes, Multimedia e Interactivos</title>
+  
+</head>
+<body>
+
+  <h1>🎨 Ejemplos HTML: Imágenes, Multimedia e Interactivos</h1>
+
+  <!-- IMÁGENES -->
+  <section>
+    <h2>🖼️ Imágenes</h2>
+    
+    <h3>Imagen básica</h3>
+    <img src="https://via.placeholder.com/400x200/4CAF50/ffffff?text=Imagen+Basica" 
+         alt="Imagen de ejemplo" 
+         width="400" 
+         loading="lazy">
+    
+    <h3>Figure con Figcaption</h3>
+    <figure>
+      <img src="https://via.placeholder.com/300x200/2196F3/ffffff?text=Grafico" 
+           alt="Gráfico de ejemplo">
+      <figcaption>Figura 1: Gráfico de ejemplo con descripción</figcaption>
+    </figure>
+
+    <h3>Picture - Imágenes responsivas</h3>
+    <picture>
+      <source media="(min-width: 800px)" 
+              srcset="https://via.placeholder.com/800x400/FF5722/ffffff?text=Desktop">
+      <source media="(min-width: 400px)" 
+              srcset="https://via.placeholder.com/400x200/FF9800/ffffff?text=Tablet">
+      <img src="https://via.placeholder.com/300x150/FFC107/ffffff?text=Mobile" 
+           alt="Imagen responsiva">
+    </picture>
+
+    <h3>Mapa de imagen clickeable</h3>
+    <img src="https://via.placeholder.com/400x200/9C27B0/ffffff?text=Mapa+Clickeable" 
+         alt="Mapa de áreas" 
+         usemap="#mapaejemplo">
+    <map name="mapaejemplo">
+      <area shape="rect" coords="0,0,200,100" href="#izquierda" alt="Área izquierda" title="Haz clic aquí">
+      <area shape="rect" coords="200,0,400,100" href="#derecha" alt="Área derecha" title="O aquí">
+    </map>
+  </section>
+
+  <!-- MULTIMEDIA -->
+  <section>
+    <h2>🎬 Multimedia</h2>
+
+    <h3>Video con controles</h3>
+    <video controls width="500" poster="https://via.placeholder.com/500x300/673AB7/ffffff?text=Video">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <h3>Canvas - Dibujo</h3>
+    <canvas id="miCanvas" width="400" height="150"></canvas>
+    <script>
+      const canvas = document.getElementById('miCanvas');
+      const ctx = canvas.getContext('2d');
+      
+      // Rectángulo azul
+      ctx.fillStyle = '#2196F3';
+      ctx.fillRect(50, 25, 100, 80);
+      
+      // Círculo rojo
+      ctx.beginPath();
+      ctx.arc(250, 65, 40, 0, 2 * Math.PI);
+      ctx.fillStyle = '#F44336';
+      ctx.fill();
+      
+      // Texto
+      ctx.fillStyle = '#4CAF50';
+      ctx.font = '20px Arial';
+      ctx.fillText('Canvas Demo', 100, 130);
+    </script>
+
+    <h3>Iframe - YouTube</h3>
+    <iframe width="500" height="280" 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            frameborder="0" 
+            allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- ETIQUETAS INTERACTIVAS -->
+  <section>
+    <h2>⚡ Etiquetas Interactivas</h2>
+
+    <h3>Details y Summary - FAQ</h3>
+    <details>
+      <summary>¿Qué es HTML?</summary>
+      <p>HTML es el lenguaje de marcado para crear páginas web.</p>
+    </details>
+
+    <details>
+      <summary>¿Qué es CSS?</summary>
+      <p>CSS es el lenguaje para dar estilo a documentos HTML.</p>
+    </details>
+
+    <details open>
+      <summary>¿Qué es JavaScript?</summary>
+      <p>JavaScript es un lenguaje de programación para páginas web interactivas.</p>
+    </details>
+
+    <h3>Dialog - Modal</h3>
+    <button onclick="document.getElementById('miModal').showModal()">
+      Abrir Modal
+    </button>
+
+    <dialog id="miModal">
+      <h3>Título del Modal</h3>
+      <p>Este es un modal nativo de HTML.</p>
+      <form method="dialog">
+        <button value="cancel">Cancelar</button>
+        <button value="confirm">Confirmar</button>
+      </form>
+    </dialog>
+
+    <h3>Popover</h3>
+    <button popovertarget="mipopover">Mostrar Popover</button>
+    <div id="mipopover" popover>
+      <h4>¡Hola! 👋</h4>
+      <p>Este es un popover nativo de HTML.</p>
+    </div>
+
+    <h3>Datalist - Autocompletado</h3>
+    <label for="navegador">Elige tu navegador:</label>
+    <input list="navegadores" id="navegador" placeholder="Escribe o selecciona">
+    <datalist id="navegadores">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Safari">
+      <option value="Edge">
+      <option value="Opera">
+    </datalist>
+
+    <h3>Contenido Editable (WYSIWYG básico)</h3>
+    <div contenteditable="true" 
+         style="border: 2px solid #ddd; padding: 15px; min-height: 100px; background: #fff;">
+      <p>Este contenido es <strong>editable</strong>. Puedes escribir, copiar, pegar y dar formato.</p>
+      <p>Intenta editarlo...</p>
+    </div>
+  </section>
+
+  <!-- EJEMPLOS COMBINADOS -->
+  <section>
+    <h2>🎯 Ejemplo Combinado</h2>
+
+    <details>
+      <summary>Ver galería de imágenes</summary>
+      <figure>
+        <img src="https://via.placeholder.com/300x200/E91E63/ffffff?text=Foto+1" alt="Foto 1">
+        <figcaption>Imagen 1 de la galería</figcaption>
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/300x200/9C27B0/ffffff?text=Foto+2" alt="Foto 2">
+        <figcaption>Imagen 2 de la galería</figcaption>
+      </figure>
+    </details>
+
+    <details>
+      <summary>Ver video tutorial</summary>
+      <video controls width="400">
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </details>
+  </section>
+
+</body>
+</html>
