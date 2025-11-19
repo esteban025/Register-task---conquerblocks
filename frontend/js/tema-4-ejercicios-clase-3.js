@@ -145,11 +145,9 @@ class Televisor {
   }
   cambiarCanal(canal) {
     if (this.encendido) {
-      if (this.canal >= 1 && canal <= this.canales) {
-        this.canal = canal
-      } else {
-        throw new Error("Canal inválido");
-      }
+      const condition = this.canal >= 1 && canal <= this.canales;
+
+      condition ? this.canal = canal : (() => {throw new Error("Canal inválido")})()
     }
   }
   subirVol() {
@@ -167,10 +165,11 @@ class Televisor {
   }
 }
 
-const tv1 = new Televisor("Samsung", 50);
+const tv1 = new Televisor("Samsung", 100);
 console.log(tv1.toStrign());
 tv1.encenderApagar();
-tv1.cambiarCanal(10);
+// tv1.cambiarCanal(10);
+tv1.cambiarCanal(88);
 tv1.subirVol();
 tv1.subirVol();
 tv1.subirVol();
