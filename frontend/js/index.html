@@ -33,6 +33,22 @@
       }
     }
   }
+
+  /* ejercicio 2 - caja movil */
+  .box-move {
+    width: 100%;
+    max-width: 150px;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(197, 227, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #ccc; */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 4rem;
+  }
 </style>
 <body>
   <h1>Javascript - Eventos de form</h1>
@@ -58,6 +74,50 @@
       <div>Card 4</div>
     </article>
   </section>
-  <script  src="./tema-7-emision-propagacion-eventos.js"></script>
+
+
+  <!-- EJERCICIOS EVENTOS / EJERCICIO 1 -->
+  <section class="change-images">
+    <h3>Imagen por tecla</h3>
+    <p>Teclea un numero del 0 al 9</p>
+    <picture>
+      <img src="https://picsum.photos/seed/mi-semilla/200" alt="image-random" loading="lazy">
+    </picture>
+  </section>
+
+  <!-- EJERCICIOS EVENTOS / EJERCICIO 2 -->
+  <section>
+    <h3>Caja movil</h3>
+    <p>presiona las flechas para mover la caja</p>
+    <div class="box-move">as</div>
+  </section>
+
+  <!-- EJERCICIOS CON LISTAS DESORDENADAS -->
+  <section class="event-bubbling">
+    <h3>Ordenacion de listas desordenadas</h3>
+    <p>Lista desordenadas</p>
+    <article>
+      <h4>Ingredientes</h4>
+      <ul class="list-ingredients">
+        <li>Tomate<button class="btn-delete">X</button></li>
+        <li>Lechuga<button class="btn-delete">X</button></li>
+        <li>Queso<button class="btn-delete">X</button></li>
+        <li>Carne<button class="btn-delete">X</button></li>
+        <li>Pan<button class="btn-delete">X</button></li>
+      </ul>
+      <div class="btns">
+        <button>Ordenar</button>
+        <button>Nuevo Elemento</button>
+      </div>
+    </article>
+  </section>
+
+  <!-- EJERCICIOS DE PARRAFOS DINAMICOS -->
+  <section class="dinamic-paragragh">
+    <h3>Parrafo dinamico</h3>
+    <p>Escribe alguna frase en tu teclado, no ingresar numeros ni flechas</p>
+    <p></p>
+  </section>
+  <script  src="./tema-7-resolucion-eje-eventos.js"></script>
 </body>
 </html>
