@@ -5,6 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aprendiendo JS | ConquerBlocks</title>
 </head>
+
+<style>
+  /* ejercicios de cards */
+  .cards-whites article {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    & > div {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border: 2px solid #ccc; */
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        scale: 1.05;
+        cursor: pointer;
+      }
+    }
+  }
+</style>
 <body>
   <h1>Javascript - Eventos de form</h1>
   <section>
@@ -18,7 +47,17 @@
         <a id="btn-submit" href="#">Send</a>
       </div>
     </form>
-    <script  src="./tema-7-gestion-forms.js"></script>
   </section>
+
+  <section class="cards-whites">
+    <h3>Ejercicios de cards</h3>
+    <article>
+      <div>Card 1</div>
+      <div>Card 2</div>
+      <div>Card 3</div>
+      <div>Card 4</div>
+    </article>
+  </section>
+  <script  src="./tema-7-tipos-eventos.js"></script>
 </body>
 </html>
