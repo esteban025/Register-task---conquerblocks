@@ -49,6 +49,50 @@
     transition: all 0.3s ease;
     margin-bottom: 4rem;
   }
+  
+  /* ejercicio 2 de pulsaciones */
+  .box-pulsaciones {
+    & .content-box {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      /* justify-content: center; */
+      /* align-items: center; */
+
+      & > div {
+        width: 10px;
+        height: 40px;
+        border-radius: 555px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        position: relative;
+        box-shadow:0 4px 6px rgba(0, 0, 0, 0.5);
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 500px;
+          height: 100%;
+          top: 0;
+          left: 0;
+          border-radius: 555px;
+          z-index: -1;
+          background-color: #dddcdc;
+        }
+
+        &.box-green {
+          background-color: green;
+        }
+        &.box-red {
+          background-color: red;
+        }
+      }
+    }
+
+  }
 </style>
 <body>
   <h1>Javascript - Eventos de form</h1>
@@ -118,6 +162,29 @@
     <p>Escribe alguna frase en tu teclado, no ingresar numeros ni flechas</p>
     <p></p>
   </section>
-  <script  src="./tema-7-resolucion-eje-eventos.js"></script>
+
+  <section class="search-paragraph">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eos vitae magni iste. Quae dolor ad blanditiis. Dolorum voluptatibus eos velit esse saepe tempora soluta veniam, magni libero eaque culpa possimus, nesciunt repudiandae voluptas, ab reprehenderit quis. Minus molestias magni odio quisquam, est vitae fuga explicabo. Rerum amet ex error?</p>
+
+    <div class="btns-hidden-text">
+      <button>a</button>
+      <button>e</button>
+      <button>i</button>
+      <button>o</button>
+      <button>u</button>
+    </div>
+  </section>
+
+  <!-- Cajas de pulsaciones -->
+  <section class="box-pulsaciones">
+    <h3>Pulsaciones con cada mano</h3>
+    <p>Pulsa las teclas que aparecen en cada caja y mira con que mano eres mas veloz</p>
+    <div class="content-box">
+      <div class="box-green">a</div>
+      <div class="box-red">n</div>
+    </div>
+
+  </section>
+  <script  src="./tema-7-resolucion-eje-eventos-2.js"></script>
 </body>
 </html>
