@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Estilos personalizados para las animaciones 3D de las cartas */
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Transiciones suaves */
+* {
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Supports weights 100-900 */
+@import '@fontsource-variable/inter';
+
+body {
+  font-family: 'Inter Variable', sans-serif;
+}
