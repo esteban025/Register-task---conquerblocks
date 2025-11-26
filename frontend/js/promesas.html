@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>promesas</title>
 </head>
 <body>
-  
-  <script src="./tema-10-fetch.js"></script>
+
+  <!-- example de form post -->
+  <section>
+    <fieldset>
+      <legend>New Post</legend>
+      <article>
+        <form action="" method="post" id="post-form">
+          <div class="userId">
+            <label for="select-id">Selecciona un usuaario</label>
+            <select name="select-id" id="select-id" required>
+              <option value="">-</option>
+              <!-- se ejecutara options con fetch users -->
+            </select>
+          </div>
+          <div class="title">
+            <label for="title-post">Titulo</label>
+            <input type="text" name="title-post" id="title-post" required>
+          </div>
+          <div class="completed">
+            <input type="checkbox" name="check-completed" id="check-completed">
+            <label for="check-completed">Completada</label>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </article>
+    </fieldset>
+  </section>  
+  <script src="./tema-10-post-with-fetch.js"></script>
 </body>
 </html>
