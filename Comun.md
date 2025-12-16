@@ -57,7 +57,7 @@ Diego Roldán y Jenny Matute
 <!-- SAN JUAN PABLO II -->
 Comunidad 5
 Fabian Sinchi y Rosana Sinchi
-Maritza Faican con bebe
+Maritza Faican con bebe -> (*no registrada*)
 Nelson Sacta y Veronica Muy
 Nancy Baculima joven
 
@@ -86,14 +86,14 @@ Víctor Tigre y Ana Lucía Amón
 Salomé Cabrera
 
 Comunidad 15
-Diego y Gaby 
+Diego y Gaby (*Pendiente*)
 Angle y Patricia 
-Jorge Guaman
+Jorge Guaman (*pendiente*)
 Paul Arevalo
 Estefania
 
 Comunidad 18 
-Marco y María 
+Marco y María (*pendiente como marcos*)
 Marcial y Bety 
 Mayte 
 Carlitos 
